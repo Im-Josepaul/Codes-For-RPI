@@ -1,1 +1,0 @@
-print("Mwonuse namma jayiche!!")
