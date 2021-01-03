@@ -1,1 +1,0 @@
-print("This is to show that our command line programme works!!")
