@@ -1,0 +1,8 @@
+First_Screen = [
+    [sg.Text("First, connect the HC-SR04 Ultrasonic sensor with RPI as shown"),sg.Text("here.", text_color="blue", key="-LINK-", enable_events=True)],
+    [sg.Text("After connecting, press CONTINUE")]
+    [sg.Button("CONTINUE", key="-BUTTON-")]
+]
+   if event == "-BUTTON-" :
+        second_screen()
+        break
