@@ -1,16 +1,16 @@
 import PySimpleGUI as sg    #Importing nessessary libraries
 import webbrowser
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import time
 
 sg.theme("Black")   #Importing theme
 
-GPIO.setmode(GPIO.BOARD)   #Setting RPi Board mode
+#GPIO.setmode(GPIO.BOARD)   #Setting RPi Board mode
 TRIG = 16          #These are the two pins of RPi where Trig and Echo pins of
 ECHO = 18          #HC-SR04 should be connected. We can change this if needed. 
 i=0
-GPIO.setup(TRIG,GPIO.OUT)  #Setting 16th pin as output pin
-GPIO.setup(ECHO,GPIO.IN)   #Setting 18th pin as input pin 
+#GPIO.setup(TRIG,GPIO.OUT)  #Setting 16th pin as output pin
+#GPIO.setup(ECHO,GPIO.IN)   #Setting 18th pin as input pin 
 
 #Front-End of the programme starts here.
 
@@ -28,15 +28,15 @@ def second_screen():        #Second screen is defined as function. We need this 
     window = sg.Window("Distance Measuring Software", layout, modal = False, element_justification="centre")
     while True:
             event, values = window.read()
-            GPIO.output(TRIG, True)
+            #GPIO.output(TRIG, True)
             time.sleep(0.00001)         #Activating sensor by activating TRIG pin
-            GPIO.output(TRIG, False)    #A signal is transmitted when TRIG pin is HIGH
+            #GPIO.output(TRIG, False)    #A signal is transmitted when TRIG pin is HIGH
 
-            while GPIO.input(ECHO)==0:      #When TRIG pin is activated, this command will activate simultaneously
-                pulse_start = time.time()   #The time at which the signal from sensor is propogated is noted here.
+            #while GPIO.input(ECHO)==0:      #When TRIG pin is activated, this command will activate simultaneously
+                #pulse_start = time.time()   #The time at which the signal from sensor is propogated is noted here.
 
-            while GPIO.input(ECHO)==1:      #When signal reaches the reciever of the sensor, ECHO pin will become HIGH.
-                pulse_end = time.time()     #The time at which the signal is recieved by sensor is noted here.
+            #while GPIO.input(ECHO)==1:      #When signal reaches the reciever of the sensor, ECHO pin will become HIGH.
+                #pulse_end = time.time()     #The time at which the signal is recieved by sensor is noted here.
 
     pulse_duration = pulse_end - pulse_start    #The time taken by signal from Transmitter to Reciever of the sensor is calculated.
 
@@ -72,7 +72,7 @@ while True:
         break
     elif event == "-LINK-":
         webbrowser.open("https://www.electronicshub.org/wp-content/uploads/2018/02/Raspberry-Pi-Ultrasonic-Sensor-Interface-Circuit-Diagram.jpg", new=1)
-    if GPIO.input(ECHO)==0:
+    #if GPIO.input(ECHO)==0:
         second_screen()
         break
     
