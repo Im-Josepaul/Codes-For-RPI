@@ -1,0 +1,30 @@
+These are some of the projects we are going to do. 
+Main website: https://www.makeuseof.com/tag/10-raspberry-pi-projects-beginners/amp/ 
+
+1) Add a Button to a Raspberry Pi: 
+
+https://www.makeuseof.com/tag/add-button-raspberry-pi-project/ 
+
+2)Control LED Lights With Raspberry Pi: 
+
+https://www.makeuseof.com/tag/raspberry-pi-control-led/ 
+
+3)Raspberry Pi Motion Sensor using a PIR Sensor: 
+
+https://pimylifeup.com/raspberry-pi-motion-sensor/ 
+
+4)A Web Interface for Your Raspberry Pi: 
+
+https://www.instructables.com/Simple-and-intuitive-web-interface-for-your-Raspbe/ 
+
+5)Raspberry Pi Ultrasonic Sensor HC-SR04 Interface Tutorial: 
+
+https://www.electronicshub.org/raspberry-pi-ultrasonic-sensor-interface-tutorial/#:~:text=Connect%20the%20Trig%20Pin%20of,GPIO24%20of%20the%20Raspberry%20Pi.
+
+6)Controlling a DC Motor with Raspberry Pi: 
+
+https://www.electronicshub.org/controlling-a-dc-motor-with-raspberry-pi/#Components_Required 
+
+7)Sound Sensor with raspberry pi 
+
+https://www.google.com/amp/s/www.instructables.com/Sound-Sensor-Raspberry-Pi/%3famp_page=true 
